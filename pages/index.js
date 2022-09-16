@@ -2,14 +2,16 @@ import axios from 'axios'
 import Head from 'next/head'
 import Image from 'next/image'
 import Hero from '../components/Hero'
+import PopularMovie from '../components/PopularMovie'
 import { server } from '../config'
 import styles from '../styles/Home.module.css'
 
 export default function Home({ movies }) {
   console.log(movies)
   return (
-    <div>
+    <div className='bg-gray-700'>
       <Hero />
+      <PopularMovie movies={movies.results} />
     </div>
   )
 }
