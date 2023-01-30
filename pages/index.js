@@ -6,8 +6,7 @@ import PopularMovie from '../components/PopularMovie'
 import { server } from '../config'
 import styles from '../styles/Home.module.css'
 
-export default function Home({ movies }) {
-  console.log(movies)
+export default function Home() {
   return (
     <div className='bg-gray-700'>
       <Hero />
